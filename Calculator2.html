@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="D:\Javascript\Calculator2.css">
+    <script src="D:\Javascript\Calculator2.js">
+
+    </script>
+  </head>
+  <body>
+  <center>
+  <h1>Calculator Program in JavaScript</h1>
+  <div class="formstyle">
+  <form name = "form1">
+  <input class="textview" name = "textview">
+  </form>
+  <table>
+    <tr>
+    <td><input type ="button" class="cl" value="C" onclick ="form1.textview.value= ' ' "></td>
+    <td><input type ="button" class="cl" value="B" onclick ="backspace()"></td>
+    <td><input type ="button" class="cl" value="/" onclick = "insert('/')"></td>
+    <td><input type ="button" class="cl" value="X" onclick = "insert('*')"></td>
+    </tr>
+    <tr>
+    <td><input type ="button" class="cl" value="7" onclick="insert(7)"></td>
+    <td><input type ="button" class="cl" value="8" onclick="insert(8)"></td>
+    <td><input type ="button" class="cl" value="9" onclick="insert(9)"></td>
+    <td><input type ="button" class="cl" value="-" onclick="insert('-')"></td>
+    </tr>
+
+    <tr>
+    <td><input type ="button" class="cl" value="4" onclick="insert(4)"></td>
+    <td><input type ="button" class="cl" value="5" onclick="insert(5)"></td>
+    <td><input type ="button" class="cl" value="6" onclick="insert(6)"></td>
+    <td><input type ="button" class="cl" value="+" onclick="insert('+')"></td>
+    </tr>
+
+    <tr>
+    <td><input type ="button" class="cl" value="1" onclick="insert(1)"></td>
+    <td><input type ="button" class="cl" value="2" onclick="insert(2)"></td>
+    <td><input type ="button" class="cl" value="3" onclick="insert(3)"></td>
+    <td rowspan=5> <input class = "cl" style = "height: 115px"type="button" value ="=" onclick="equal()"</td>
+    </tr>
+
+    <tr>
+    <td colspan = 2> <input class = "cl" style= "width: 115px" type = "button" value = "0" onclick="insert(0)"</td>
+    <td><input class="cl" type ="button" value="." onclick="insert('.')"></td>
+    </tr>
+  </table>
+  </div>
+  </center>
+  </body>
+</html>
